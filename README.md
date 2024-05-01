@@ -245,7 +245,8 @@ status code: 400 (Bad Request)<br/>
 </Section>
 
 <Section id="section6">
-    ### API 6
+    
+### API 6
 
 #### Path: `/tasks/:taskId`
 
@@ -283,27 +284,38 @@ if you try to update the task of which is not belongs to you <br />
 ```
 </Section>
 
-<Section>
+<Section id="section7">
     
-### Api 7
-
-#### path: `/tasks/:taskId`
+### API 7
+  
+#### Path: `/tasks/:taskId`
 
 #### Method: `DELETE`
 
 #### Path Parameter: ID (tasks)
 
+**Description**
+Delete an existing task.. JWT token is required.
+<br/>
+
 **Response**
 <br />
 **Success**
 <br />
-
 ```
 {
     "message": "Task deleted successfully"
 }
 ```
-    
+
+**Error**
+<br/>
+if you try to delete the task which is not belongs to you.
+```
+  {
+    "message": "Unauthorized, You can't delete this task. You can only delete your own entries"
+}
+```
 </Section>
 <br/>
 
