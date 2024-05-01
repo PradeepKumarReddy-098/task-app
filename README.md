@@ -179,3 +179,46 @@ status code: 400 (Bad Request)<br/>
 
 
 
+<Section id="section6>
+
+### API 6
+
+#### Path: `/tasks/:taskId`
+
+#### Method: `PUT`
+
+#### Path Parameter: ID (tasks)
+**Description**
+<br />
+Updates an existing task.. JWT token is required.
+
+<br/>
+
+**Response**
+<br />
+**Success**
+<br />
+```
+{
+    "message": "Task updated successfully"
+}
+```
+**Error**<br/>
+if we try to update the task which is not created by you.
+status code: 400 (Bad Request)<br/>
+if you haven't provided the detalis like title,description,due_date,status  <br />
+  body:
+  ```
+  { message: 'Please provide all necessary task details' }
+  ```
+if you try to update the task of which is not belongs to you <br />
+```
+  {
+    "message": "Unauthorized, You can't access this task. You can only access your own entries"
+}
+```
+</Section>
+
+
+
+
