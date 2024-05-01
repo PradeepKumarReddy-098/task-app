@@ -228,6 +228,45 @@ if you try to update the task of which is not belongs to you <br />
 
 <br/>
 
+<Section id="section7>
+  
+### API 7
+  
+#### Path: `/tasks/:taskId`
+
+#### Method: `DELETE`
+
+#### Path Parameter: ID (tasks)
+
+**Description**
+Delete an existing task.. JWT token is required.
+<br/>
+
+**Response**
+<br />
+**Success**
+<br />
+```
+{
+    "message": "Task deleted successfully"
+}
+```
+
+**Error**
+<br/>
+if you try to delete the task which is not belongs to you.
+```
+  {
+    "message": "Unauthorized, You can't delete this task. You can only delete your own entries"
+}
+```
+provided Invalid id or if you try to delete the task which is not created by you
+<br />
+
+</Section>
+
+<br />
+
 Use `npm install` to install the packages.
 
 **Export the express instance using the default export syntax.**
