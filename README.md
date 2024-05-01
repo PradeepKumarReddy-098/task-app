@@ -200,6 +200,17 @@ body:
 
 </Section>
 
+
+<Section id="section5r">
+    
+### API 5
+
+#### path:  `/tasks/:taskId`
+
+#### Method: `GET`
+    
+</Section>
+
 <Section id="section5>
 
 ### API 5
