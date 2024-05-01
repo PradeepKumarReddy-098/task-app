@@ -254,13 +254,12 @@ Delete an existing task.. JWT token is required.
 
 **Error**
 <br/>
-if you try to delete the task which is not belongs to you.
+if you try to delete the task which is not belongs to you or provided Invalid id.
 ```
   {
     "message": "Unauthorized, You can't delete this task. You can only delete your own entries"
 }
 ```
-provided Invalid id or if you try to delete the task which is not created by you
 <br />
 
 </Section>
