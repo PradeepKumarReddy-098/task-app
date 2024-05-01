@@ -294,11 +294,26 @@ if you try to update the task of which is not belongs to you <br />
 </Section>
 
 <Section>
-    ### Api 7
+    
+### Api 7
 
-    #### path: `/tasks/:taskId
+#### path: `/tasks/:taskId`
 
-    #### Method: `DELETE`
+#### Method: `DELETE`
+
+#### Path Parameter: ID (tasks)
+
+**Response**
+<br />
+**Success**
+<br />
+
+```
+{
+    "message": "Task deleted successfully"
+}
+```
+    
 </Section>
 <br/>
 
