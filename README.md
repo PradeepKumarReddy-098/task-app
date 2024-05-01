@@ -173,7 +173,7 @@ status code: 400 (Bad Request)<br/>
   ```
   {
     "message": "Unauthorized user"
-}
+  }
   ```
 </Section>
 
@@ -189,7 +189,6 @@ status code: 400 (Bad Request)<br/>
 **Description**
 <br />
 Retrieves a specific task by its ID. JWT token is required.
-
 <br/>
 
 **Response**
@@ -263,7 +262,6 @@ if you try to update the task of which is not belongs to you <br />
 ```
 </Section>
 
-
 <Section id="section7>
   
 ### API 7
@@ -300,5 +298,7 @@ provided Invalid id or if you try to delete the task which is not created by you
 <br />
 
 </Section>
+
+
 
 
