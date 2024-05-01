@@ -201,7 +201,7 @@ body:
 </Section>
 
 
-<Section id="section5r">
+<Section id="section5">
     
 ### API 5
 
@@ -230,6 +230,7 @@ Retrieves a specific task by its ID. JWT token is required.
 }
 ```
 </Section>
+
 
 <Section id="section6>
 
