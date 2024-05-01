@@ -166,8 +166,9 @@ Retrieves all tasks for the authenticated user.
     }
 ]
 ```
-**Error**<br/>
-If we haven't provided the jwt_token.
+**Error**
+<br/>
+If we haven't provided the jwt_token. <br />
 status code: 400 (Bad Request)<br/>
   body:
   ```
@@ -177,48 +178,46 @@ status code: 400 (Bad Request)<br/>
   ```
 </Section>
 
+<Section id="section5>
 
-
-<Section id="section6>
-
-### API 6
+### API 5
 
 #### Path: `/tasks/:taskId`
 
-#### Method: `PUT`
+#### Method: `GET`
 
-#### Path Parameter: ID (tasks)
 **Description**
 <br />
-Updates an existing task.. JWT token is required.
-
+Retrieves a specific task by its ID. JWT token is required.
 <br/>
 
 **Response**
 <br />
 **Success**
-<br />
 ```
 {
-    "message": "Task updated successfully"
+    "id": 8,
+    "title": "task-1",
+    "description": "testing the apis of the application",
+    "status": "Inprogress",
+    "user_id": 3,
+    "created_at": "2024-5-1",
+    "due_date": "2024-05-01",
+    "updated_at": null
 }
 ```
 **Error**<br/>
-if we try to update the task which is not created by you.
+if we try to access the task which is not created by you.
 status code: 400 (Bad Request)<br/>
-if you haven't provided the detalis like title,description,due_date,status  <br />
   body:
   ```
-  { message: 'Please provide all necessary task details' }
-  ```
-if you try to update the task of which is not belongs to you <br />
-```
   {
     "message": "Unauthorized, You can't access this task. You can only access your own entries"
-}
+  }
+(if the task with the provided ID doesn't)
+
+{ message: 'Task not found' }
 ```
+
 </Section>
-
-
-
 
