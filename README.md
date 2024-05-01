@@ -184,47 +184,6 @@ status code: 400 (Bad Request)<br/>
 
 <Section id="section5>
 
-### API 5
-
-#### Path: `/tasks/:taskId`
-
-#### Method: `GET`
-
-**Description**
-<br />
-Retrieves a specific task by its ID. JWT token is required.
-<br/>
-
-**Response**
-<br />
-**Success**
-```
-{
-    "id": 8,
-    "title": "task-1",
-    "description": "testing the apis of the application",
-    "status": "Inprogress",
-    "user_id": 3,
-    "created_at": "2024-5-1",
-    "due_date": "2024-05-01",
-    "updated_at": null
-}
-```
-**Error**<br/>
-if we try to access the task which is not created by you.
-status code: 400 (Bad Request)<br/>
-  body:
-  ```
-  {
-    "message": "Unauthorized, You can't access this task. You can only access your own entries"
-  }
-(if the task with the provided ID doesn't)
-
-{ message: 'Task not found' }
-```
-
-</Section>
-
 
 <Section id="section6>
 
@@ -266,42 +225,6 @@ if you try to update the task of which is not belongs to you <br />
 ```
 </Section>
 
-<Section id="section7>
-  
-### API 7
-  
-#### Path: `/tasks/:taskId`
-
-#### Method: `DELETE`
-
-#### Path Parameter: ID (tasks)
-
-**Description**
-Delete an existing task.. JWT token is required.
-<br/>
-
-**Response**
-<br />
-**Success**
-<br />
-```
-{
-    "message": "Task deleted successfully"
-}
-```
-
-**Error**
-<br/>
-if you try to delete the task which is not belongs to you.
-```
-  {
-    "message": "Unauthorized, You can't delete this task. You can only delete your own entries"
-}
-```
-provided Invalid id or if you try to delete the task which is not created by you
-<br />
-
-</Section>
 
 <br/>
 
