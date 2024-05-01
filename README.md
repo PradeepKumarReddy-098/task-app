@@ -221,12 +221,9 @@ if you try to update the task of which is not belongs to you <br />
 ```
   {
     "message": "Unauthorized, You can't access this task. You can only access your own entries"
-}
+  }
 ```
 </Section>
-
-
-<br/>
 
 <Section id="section7>
   
