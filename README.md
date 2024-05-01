@@ -264,12 +264,11 @@ if you try to update the task of which is not belongs to you <br />
 </Section>
 
 
-
 <Section id="section7>
   
 ### API 7
   
-### Path: `/tasks/:taskId`
+#### Path: `/tasks/:taskId`
 
 #### Method: `DELETE`
 
