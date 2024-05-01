@@ -229,12 +229,7 @@ Retrieves a specific task by its ID. JWT token is required.
     "updated_at": null
 }
 ```
-
-
-    
 </Section>
-
-
 
 <Section id="section6>
 
