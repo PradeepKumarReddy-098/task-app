@@ -163,7 +163,11 @@ Retrieves all tasks for the authenticated user.
         "created_at": "2024-5-1",
         "due_date": "2024-05-01",
         "updated_at": null
-    }
+    },
+    {
+    ...............
+    },
+    .................
 ]
 ```
 **Error**<br/>
