@@ -215,13 +215,13 @@ status code: 400 (Bad Request)<br/>
   {
     "message": "Unauthorized, You can't access this task. You can only access your own entries"
 }
-```
-body:```
-{ message: 'Task not found' }
-```
 (if the task with the provided ID doesn't)
 
+{ message: 'Task not found' }
+```
+
 </Section>
+
 
 <Section id="section6>
 
@@ -260,7 +260,9 @@ if you try to update the task of which is not belongs to you <br />
   {
     "message": "Unauthorized, You can't access this task. You can only access your own entries"
 }
+```
 </Section>
+
 
 
 <Section id="section7>
@@ -294,11 +296,10 @@ if you try to delete the task which is not belongs to you.
   {
     "message": "Unauthorized, You can't delete this task. You can only delete your own entries"
 }
+```
 provided Invalid id or if you try to delete the task which is not created by you
 <br />
 
-
-  
 </Section>
 
 
