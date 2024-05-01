@@ -208,6 +208,29 @@ body:
 #### path:  `/tasks/:taskId`
 
 #### Method: `GET`
+
+**Description**
+<br />
+Retrieves a specific task by its ID. JWT token is required.
+<br/>
+
+**Response**
+<br />
+
+```
+{
+    "id": 8,
+    "title": "task-1",
+    "description": "testing the apis of the application",
+    "status": "Inprogress",
+    "user_id": 3,
+    "created_at": "2024-5-1",
+    "due_date": "2024-05-01",
+    "updated_at": null
+}
+```
+
+
     
 </Section>
 
@@ -226,7 +249,6 @@ Retrieves a specific task by its ID. JWT token is required.
 
 **Response**
 <br />
-**Success**
 
 ```
 {
