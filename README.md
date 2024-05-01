@@ -213,7 +213,7 @@ status code: 400 (Bad Request)<br/>
   ```
   {
     "message": "Unauthorized, You can't access this task. You can only access your own entries"
-}
+  }
 (if the task with the provided ID doesn't)
 
 { message: 'Task not found' }
@@ -249,11 +249,11 @@ Updates an existing task.. JWT token is required.
 **Error**<br/>
 if we try to update the task which is not created by you.
 status code: 400 (Bad Request)<br/>
+if you haven't provided the detalis like title,description,due_date,status  <br />
   body:
   ```
   { message: 'Please provide all necessary task details' }
   ```
-if you haven't provided the detalis like title,description,due_date,status<br />
 if you try to update the task of which is not belongs to you <br />
 ```
   {
